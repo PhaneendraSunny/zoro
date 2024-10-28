@@ -1,6 +1,8 @@
-resource "aws_instance" "myname" {
-    ami = ""
-    instance_type = "t2.micro"
-    
-  
+resource "aws_instance" "name" {
+    ami = var.ami_id
+    instance_type = var.instance_type
+    key_name = var.key
+    tags = {
+        Name = "day-11"
+    }
 }
