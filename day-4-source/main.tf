@@ -1,7 +1,0 @@
-module "hobby" {
-    source = "../day-4-module"
-    ami_id = "ami-0cf4e1fcfd8494d5b"
-    key = "git key"
-    instance_type = "t2.micro"
-  
-}
