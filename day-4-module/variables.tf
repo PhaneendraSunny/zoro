@@ -10,7 +10,7 @@ variable "instance_type" {
     description = "passing the values of inttance type"
   
 }
-variable "key" {
+variable "key_name" {
     type = string
     default = ""
     description = "passing the values of inttance type"
