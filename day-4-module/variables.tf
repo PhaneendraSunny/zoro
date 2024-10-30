@@ -1,18 +1,18 @@
 variable "ami_id" {
     type = string
-    default = "ami-0cf4e1fcfd8494d5b"
+    default = ""
     description = "passing ami value to main"
 }
 
 variable "instance_type" {
     type = string
-    default = "t2.micro"
+    default = ""
     description = "passing the values of inttance type"
   
 }
 variable "key" {
     type = string
-    default = "git key"
+    default = ""
     description = "passing the values of inttance type"
   
 }
