@@ -1,6 +1,6 @@
 variable "ami_id" {
     type = string
-    default = ""
+    default =  ""
     description = "passing ami value to main"
 }
 
@@ -15,4 +15,9 @@ variable "key" {
     default = ""
     description = "passing the values of inttance type"
   
+}
+variable "cidr_block" {
+    type = string
+    default = "10.0.0.0/16"
+    description = "passing the values of inttance type"
 }
