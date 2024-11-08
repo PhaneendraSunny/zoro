@@ -1,7 +1,15 @@
-#create VPC
-resource "aws_vpc" "dev" {
-  cidr_block = "10.0.0.0/16"
-  tags = {
-    Name="my-cus-vpc"
-  }
+variable "names" {
+    type = list(string)
+    default = [ "Sabo", "Ace","Luffy" ]
+  
+}
+resource "aws_instance" "bros" {
+    instance_type = "t2.micro"
+    ami = "ami-0cf4e1fcfd8494d5b"
+    key_name = "git key"
+    for_each = toset(var.names)
+    tags = {
+      Name = each.value
+    }
+  
 }
